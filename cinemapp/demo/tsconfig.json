@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "removeComments": true,
+    "importHelpers": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

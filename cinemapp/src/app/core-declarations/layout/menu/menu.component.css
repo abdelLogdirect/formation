@@ -1,0 +1,32 @@
+:host {
+  display: block;
+}
+
+:host(.underlined) a {
+  text-decoration: underline;
+}
+
+.mat-toolbar {
+  height: 100%;
+  padding: 0;
+  display: flex;
+}
+
+a {
+  width: calc(100% / 3);
+  padding: 20px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: inherit;
+}
+
+a mat-icon {
+  margin-right: 5px;
+}
+
+.nav-active {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}

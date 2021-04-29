@@ -1,0 +1,54 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "removeComments": true,
+    "paths": {
+      "@core/environment": [
+        "src/environments/environment"
+      ],
+      "@core/auth": [
+        "src/app/core-services/auth"
+      ],
+      "@core/api": [
+        "src/app/core-services/api"
+      ],
+      "@core/store": [
+        "src/app/core-services/store"
+      ],
+      "@core/reservations": [
+        "src/app/core-services/reservations"
+      ],
+      "@core/layout": [
+        "src/app/core-declarations/layout"
+      ],
+      "@core/slideshow": [
+        "src/app/core-declarations/slideshow"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

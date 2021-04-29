@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+
+@media all and (max-width: 959px) {
+
+  /* `::ng-deep` selects elements inside <ng-content>
+  * Note it is still available as long as default encapsulation defaults to `Emulated`,
+  * but it is deprecated and won't work once we move to `ShadowDom` encapsulation */
+  ::ng-deep img {
+    width: 100vw;
+  }
+
+}

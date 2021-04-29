@@ -1,0 +1,29 @@
+:host {
+  display: block;
+}
+
+@media all {
+
+  .app-movies-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .app-movies-list>app-movies-item {
+    flex: calc(100% / 3);
+  }
+
+}
+
+@media all and (max-width: 459px) {
+
+  .app-movies-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .app-movies-list>app-movies-item {
+    flex: 100%;
+  }
+
+}

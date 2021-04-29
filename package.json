@@ -1,0 +1,15 @@
+{
+  "name": "angular-training",
+  "version": "1.0.0",
+  "description": "Angular training by Cyrille Tuzi",
+  "scripts": {},
+  "private": true,
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Cyrille Tuzi",
+    "url": "https://www.cyrilletuzi.com"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.42"
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Joker",
+    "category": "Drama",
+    "categoryId": 3,
+    "summary": "Arthur Fleck is struggling to find his way in Gotham’s fractured society. A clown-for-hire by day, he aspires to be a stand-up comic at night…but finds the joke always seems to be on him. Caught in a cyclical existence between apathy and cruelty, Arthur makes one bad decision that brings about a chain reaction of escalating events.",
+    "releasedDate": "2019-10-09",
+    "imgSrc": "/api/images/movies/joker.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/zAGVQLHvwOY",
+    "schedulesIds": [1, 2, 3, 19, 20, 21, 37, 38, 39, 55, 56, 57]
+  },
+  {
+    "id": 2,
+    "title": "Une joie secrète",
+    "category": "Documentary",
+    "categoryId": 4,
+    "summary": "Since 2015, the choreographer Nadia Vadori-Gauthier has been dancing every day with the city, the people, the materials, the environments. Her dances, sometimes crossed by echoes of the violence of the news, distill an infinitesimal sweetness in everyday spaces. This poetic and committed gesture moves the eye, inviting us to dream of the world differently.",
+    "releasedDate": "2019-09-11",
+    "imgSrc": "/api/images/movies/unejoiesecrete.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/4fbI-t2LkgM",
+    "schedulesIds": [4, 5, 6, 22, 23, 24, 40, 41, 42, 58, 59, 60]
+  },
+  {
+    "id": 3,
+    "title": "Deux moi",
+    "category": "Drama",
+    "categoryId": 3,
+    "summary": "Rémy and Mélanie are thirty years old and live in the same district in Paris. She multiplies missed appointments on social networks while he struggles to meet. Both victims of this loneliness of big cities, in the hyper connected era where we think that meeting should be easier...",
+    "releasedDate": "2019-09-11",
+    "imgSrc": "/api/images/movies/deuxmoi.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/CaJGJD56aQU",
+    "schedulesIds": [7, 8, 9, 25, 26, 27, 43, 44, 45, 61, 62, 63]
+  },
+  {
+    "id": 4,
+    "title": "Fight Club",
+    "category": "Drama",
+    "categoryId": 3,
+    "summary": "The film's narrator attends support groups of all kinds as a way to experience something within his unfeeling, commercial existence. On a business trip, he meets Tyler Durden who encourages them to form a fight club as a release for their latent aggressive tendencies.",
+    "releasedDate": "1999-11-10",
+    "imgSrc": "/api/images/movies/fightclub.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/SUXWAEX2jlg",
+    "schedulesIds": [10, 11, 12, 28, 29, 30, 46, 47, 48, 64, 65, 66]
+  },
+  {
+    "id": 5,
+    "title": "Spider-man",
+    "category": "Fantastic",
+    "categoryId": 2,
+    "summary": "A young Peter Parker begins to navigate his newfound identity as the web-slinging super hero. Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark. Peter tries to fall back into his normal daily routine – distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man – but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened.",
+    "releasedDate": "2017-07-12",
+    "imgSrc": "/api/images/movies/spiderman.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/39udgGPyYMg",
+    "schedulesIds": [13, 14, 15, 31, 32, 33, 49, 50, 51, 67, 68, 69]
+  },
+  {
+    "id": 6,
+    "title": "Coco",
+    "category": "Fantastic",
+    "categoryId": 2,
+    "summary": "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colourful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+    "releasedDate": "2017-11-29",
+    "imgSrc": "/api/images/movies/coco.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/bvomHFZO0mk",
+    "schedulesIds": [16, 17, 18, 34, 35, 36, 52, 53, 54, 70, 71, 72]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node -r esm server.js",
+    "api": "node -r esm server.js"
+  },
+  "description": "API for the Angular app.",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Cyrille Tuzi",
+    "url": "https://www.cyrilletuzi.com"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/csurf": "^1.11.0",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.0"
+  }
+}

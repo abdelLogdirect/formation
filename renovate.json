@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "ignorePaths": [
+    "cinemapp/src/app/package.json",
+    "cinemapp/projects/local-storage/package.json"
+  ],
+  "packageRules": [
+    {
+      "packageNames": ["typescript"],
+      "allowedVersions": "<4.1"
+    },
+    {
+      "packageNames": ["tslib"],
+      "allowedVersions": "<3"
+    },
+    {
+      "packageNames": ["zone.js"],
+      "allowedVersions": "<0.11"
+    },
+    {
+      "packageNames": ["@types/node"],
+      "allowedVersions": "<13"
+    }
+  ],
+  "timezone": "Europe/Paris",
+  "schedule": ["after 9am and before 12am on friday"],
+  "prHourlyLimit": 0
+}

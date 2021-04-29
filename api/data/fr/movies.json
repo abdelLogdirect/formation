@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Joker",
+    "category": "Drame",
+    "categoryId": 3,
+    "summary": "Le film se focalise sur la figure emblématique de l’ennemi juré de Batman. Il brosse le portrait d’Arthur Fleck, un homme sans concession méprisé par la société.",
+    "releasedDate": "2019-10-09",
+    "imgSrc": "/api/images/movies/joker.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/zAGVQLHvwOY",
+    "schedulesIds": [1, 2, 3, 19, 20, 21, 37, 38, 39, 55, 56, 57]
+  },
+  {
+    "id": 2,
+    "title": "Une joie secrète",
+    "category": "Documentaire",
+    "categoryId": 4,
+    "summary": "Depuis 2015, la chorégraphe Nadia Vadori-Gauthier danse chaque jour avec la ville, les gens, les matériaux, les environnements. Ses danses parfois traversées d’échos de la violence de l’actualité, distillent une douceur infinitésimale dans les espaces du quotidien. Ce geste poétique et engagé déplace le regard, invitant à rêver autrement le monde.",
+    "releasedDate": "2019-09-11",
+    "imgSrc": "/api/images/movies/unejoiesecrete.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/4fbI-t2LkgM",
+    "schedulesIds": [4, 5, 6, 22, 23, 24, 40, 41, 42, 58, 59, 60]
+  },
+  {
+    "id": 3,
+    "title": "Deux moi",
+    "category": "Drame",
+    "categoryId": 3,
+    "summary": "Rémy et Mélanie ont trente ans et vivent dans le même quartier à Paris. Elle multiplie les rendez-vous ratés sur les réseaux sociaux pendant qu'il peine à faire une rencontre. Tous les deux victimes de cette solitude des grandes villes, à l’époque hyper connectée où l’on pense pourtant que se rencontrer devrait être plus simple…",
+    "releasedDate": "2019-09-11",
+    "imgSrc": "/api/images/movies/deuxmoi.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/CaJGJD56aQU",
+    "schedulesIds": [7, 8, 9, 25, 26, 27, 43, 44, 45, 61, 62, 63]
+  },
+  {
+    "id": 4,
+    "title": "Fight Club",
+    "category": "Drame",
+    "categoryId": 3,
+    "summary": "Le narrateur, sans identité précise, vit seul, travaille seul, dort seul, mange seul ses plateaux-repas pour une personne comme beaucoup d'autres personnes seules qui connaissent la misère humaine, morale et sexuelle. C'est pourquoi il va devenir membre du Fight club, un lieu clandestin ou il va pouvoir retrouver sa virilité, l'échange et la communication. Ce club est dirigé par Tyler Durden, une sorte d'anarchiste entre gourou et philosophe qui prêche l'amour de son prochain.",
+    "releasedDate": "1999-11-10",
+    "imgSrc": "/api/images/movies/fightclub.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/SUXWAEX2jlg",
+    "schedulesIds": [10, 11, 12, 28, 29, 30, 46, 47, 48, 64, 65, 66]
+  },
+  {
+    "id": 5,
+    "title": "Spider-man",
+    "category": "Fantastique",
+    "categoryId": 2,
+    "summary": "Après ses spectaculaires débuts dans Captain America : Civil War, le jeune Peter Parker découvre peu à peu sa nouvelle identité, celle de Spider-Man, le super-héros lanceur de toile. Galvanisé par son expérience avec les Avengers, Peter rentre chez lui auprès de sa tante May, sous l’œil attentif de son nouveau mentor, Tony Stark. Il s’efforce de reprendre sa vie d’avant, mais au fond de lui, Peter rêve de se prouver qu’il est plus que le sympathique super héros du quartier.",
+    "releasedDate": "2017-07-12",
+    "imgSrc": "/api/images/movies/spiderman.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/39udgGPyYMg",
+    "schedulesIds": [13, 14, 15, 31, 32, 33, 49, 50, 51, 67, 68, 69]
+  },
+  {
+    "id": 6,
+    "title": "Coco",
+    "category": "Fantastique",
+    "categoryId": 2,
+    "summary": "Depuis déjà plusieurs générations, la musique est bannie dans la famille de Miguel. Un vrai déchirement pour le jeune garçon dont le rêve ultime est de devenir un musicien aussi accompli que son idole, Ernesto de la Cruz.",
+    "releasedDate": "2017-11-29",
+    "imgSrc": "/api/images/movies/coco.jpg",
+    "videoYoutube": "https://www.youtube-nocookie.com/embed/bvomHFZO0mk",
+    "schedulesIds": [16, 17, 18, 34, 35, 36, 52, 53, 54, 70, 71, 72]
+  }
+]

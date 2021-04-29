@@ -1,0 +1,29 @@
+:host {
+  display: block;
+}
+
+@media all {
+
+  .app-schedules {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .app-schedules>div {
+    flex: 50%;
+  }
+
+}
+
+@media all and (max-width: 459px) {
+
+  .app-schedules {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .app-schedules>div {
+    flex: 100%;
+  }
+
+}

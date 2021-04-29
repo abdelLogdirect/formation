@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template" target-language="en">
+    <body>
+      <trans-unit id="headerLogoAlt" datatype="html">
+        <source>Cinemapp</source>
+        <target state="translated">Cinemapp</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ui/layout/header/header.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuMovies" datatype="html">
+        <source>Films</source>
+        <target state="translated">Movies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ui/layout/menu/menu.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuTheaters" datatype="html">
+        <source>Cinémas</source>
+        <target state="translated">Theaters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ui/layout/menu/menu.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuReservations" datatype="html">
+        <source>Mes résas</source>
+        <target state="translated">Bookings</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ui/layout/menu/menu.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menuAccount" datatype="html">
+        <source>Compte</source>
+        <target state="translated">Account</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/ui/layout/menu/menu.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offlineTitle" datatype="html">
+        <source>Mode hors ligne</source>
+        <target state="translated">Offline mode</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/oops/pages/offline/offline.page.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offlineMessage" datatype="html">
+        <source>Cette page nécessite une connexion Internet.</source>
+        <target state="translated">An Internet connection is required to see this page.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/oops/pages/offline/offline.page.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="offlineBookings" datatype="html">
+        <source>Accéder à vos réservations</source>
+        <target state="translated">Go to your bookings</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/oops/pages/offline/offline.page.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="unavailableTitle" datatype="html">
+        <source>Service inaccessible</source>
+        <target state="translated">Service unavailable</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/oops/pages/unavailable/unavailable.page.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="unavailableMessage" datatype="html">
+        <source>Le service est momentanément indisponible. Merci de réessayer ultérieurement.</source>
+        <target state="translated">The service is temporarily unavailable. Please try again later.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/oops/pages/unavailable/unavailable.page.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="unavailableReservations" datatype="html">
+        <source>Accéder à vos réservations</source>
+        <target state="translated">Go to your bookings</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/oops/pages/unavailable/unavailable.page.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFoundTitle" datatype="html">
+        <source>Page introuvable</source>
+        <target state="translated">Page not found</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/oops/pages/not-found/not-found.page.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFoundMessage" datatype="html">
+        <source>La page que vous recherchez n'existe pas.</source>
+        <target state="translated">The page you are looking for does not exist.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/oops/pages/not-found/not-found.page.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notBackToHome" datatype="html">
+        <source>Revenir à la page d'accueil</source>
+        <target state="translated">Go back to home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/oops/pages/not-found/not-found.page.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="moviesStarred" datatype="html">
+        <source>Films à la une</source>
+        <target state="translated">Starred movies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cinema/pages/movies/movies.page.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="moviesAll" datatype="html">
+        <source>Tous les films</source>
+        <target state="translated">All movies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cinema/pages/movies/movies.page.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="movieReleaseDate" datatype="html">
+        <source>Date de sortie</source>
+        <target state="translated">Released date</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/cinema/components/movie-details/movie-details.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerTitle" datatype="html">
+        <source>Inscription</source>
+        <target state="translated">Register</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerWarning" datatype="html">
+        <source>Attention : il s'agit d'une app de test. E-mail et mot de passe seront visibles en clair par n'importe qui.</source>
+        <target state="translated">Please note: this is a test app. E-mail and password will be visible by anyone.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerEmail" datatype="html">
+        <source>Votre adresse e-mail</source>
+        <target state="translated">Your email address</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerEmailMissing" datatype="html">
+        <source>L'e-mail est obligatoire</source>
+        <target state="translated">Email is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerPassword" datatype="html">
+        <source>Votre mot de passe</source>
+        <target state="translated">Your password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerPasswordMissing" datatype="html">
+        <source>Le mot de passe est obligatoire</source>
+        <target state="translated">Password is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerCard" datatype="html">
+        <source>J'ai une carte :</source>
+        <target state="translated">I have a card:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerCardNo" datatype="html">
+        <source>Non</source>
+        <target state="translated">No</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerGenreNone" datatype="html">
+        <source>Non spécifié</source>
+        <target state="translated">I prefer not say</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerGenreAction" datatype="html">
+        <source>Action</source>
+        <target state="translated">Action</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerGenreComedy" datatype="html">
+        <source>Comédie</source>
+        <target state="translated">Comedy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerGenreDrama" datatype="html">
+        <source>Drame</source>
+        <target state="translated">Drama</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerGenreHorror" datatype="html">
+        <source>Horreur</source>
+        <target state="translated">Horror</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerGenre" datatype="html">
+        <source>Genre de film préféré</source>
+        <target state="translated">Favorite kind of movies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerAboutYou" datatype="html">
+        <source>A propos de vous</source>
+        <target state="translated">About you</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerCity" datatype="html">
+        <source>Votre ville</source>
+        <target state="translated">Your city</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerConditions" datatype="html">
+        <source>J'accepte les conditions d'utilisation</source>
+        <target state="translated">I accept the conditions of use</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerConditionsNotChecked" datatype="html">
+        <source>Vous devez accepter les conditions.</source>
+        <target state="translated">You must agree to the terms.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerSubmit" datatype="html">
+        <source>Valider l'inscription</source>
+        <target state="translated">Validate registration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerExistingAccount" datatype="html">
+        <source>Déjà inscrit/e ? Authentifiez-vous.</source>
+        <target state="translated">Already registered? Sign in.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/register/register.page.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginTitle" datatype="html">
+        <source>Authentification</source>
+        <target state="translated">Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/login/login.page.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginEmail" datatype="html">
+        <source>Votre adresse e-mail</source>
+        <target state="translated">Your email address</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/login/login.page.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginEmailMissing" datatype="html">
+        <source>L'e-mail est obligatoire</source>
+        <target state="translated">Email is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/login/login.page.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginPassword" datatype="html">
+        <source>Votre mot de passe</source>
+        <target state="translated">Your password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/login/login.page.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginPasswordMissing" datatype="html">
+        <source>Le mot de passe est obligatoire</source>
+        <target state="translated">Password is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/login/login.page.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginSubmit" datatype="html">
+        <source>S'authentifier</source>
+        <target state="translated">Log in</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/login/login.page.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginNoAccount" datatype="html">
+        <source>Pas encore inscrit/e ? Créez un compte.</source>
+        <target state="translated">Not yet registered? Create an account.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/login/login.page.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="logoutTitle" datatype="html">
+        <source>Désauthentification</source>
+        <target state="translated">Log out</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/logout/logout.page.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="logoutSuccess" datatype="html">
+        <source>Désauthentification réussie.</source>
+        <target state="translated">Logout successful.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/logout/logout.page.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="logoutLogAgain" datatype="html">
+        <source>Se réauthentifier</source>
+        <target state="translated">Log in again</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/logout/logout.page.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profileTitle" datatype="html">
+        <source>Profil</source>
+        <target state="translated">Profile</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/profile/profile.page.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profileReservationsNumber" datatype="html">
+        <source><x id="ICU" equiv-text="{reservations.length, plural, =0 {...} =1 {...} other {...}}"/>.</source>
+        <target state="translated"><x id="ICU" equiv-text="{reservations.length, plural, =0 {...} =1 {...} other {...}}"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/profile/profile.page.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eea74bd61676aa17cfc9fb1b89a4199036de89a2" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {Vous n'avez pas de réservation} =1 {Vous avez une réservation} other {Vous avez <x id="INTERPOLATION" equiv-text="{{ reservations.length }}"/> réservations} }</source>
+        <target state="translated">{VAR_PLURAL, plural, =0 {You do not have a reservation} =1 {You have a reservation} other {You have <x id="INTERPOLATION" equiv-text="{{ reservations.length }}"/> reservations} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/profile/profile.page.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profileMovie" datatype="html">
+        <source>Film</source>
+        <target state="translated">Movie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/profile/profile.page.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profileTheater" datatype="html">
+        <source>Cinéma</source>
+        <target state="translated">Theater</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/profile/profile.page.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profileSchedule" datatype="html">
+        <source>Séance</source>
+        <target state="translated">Schedule</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/profile/profile.page.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profileCancel" datatype="html">
+        <source>Annuler cette réservation</source>
+        <target state="translated">Cancel this reservation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/profile/profile.page.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profileInProgress" datatype="html">
+        <source>Réservation en cours...</source>
+        <target state="translated">Booking in progress...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/profile/profile.page.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profileLogout" datatype="html">
+        <source>Se désauthentifier</source>
+        <target state="translated">Log out</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/profile/profile.page.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reactiveTitle" datatype="html">
+        <source>Inscription</source>
+        <target state="translated">Register</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/reactive/reactive.page.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reactiveWarning" datatype="html">
+        <source>Attention : il s'agit d'une app de test. E-mail et mot de passe seront visibles en clair par n'importe qui.</source>
+        <target state="translated">Please note: this is a test app. E-mail and password will be visible by anyone.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/reactive/reactive.page.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reactiveSubmit" datatype="html">
+        <source>Valider l'inscription</source>
+        <target state="translated">Validate registration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/reactive/reactive.page.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reactiveExistingAccount" datatype="html">
+        <source>Déjà inscrit/e ? Authentifiez-vous.</source>
+        <target state="translated">Already registered? Sign in.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/pages/reactive/reactive.page.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reactivePassword" datatype="html">
+        <source>Votre mot de passe</source>
+        <target state="translated">Your password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/components/password-with-confirmation/password-with-confirmation.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reactivePasswordMissing" datatype="html">
+        <source>Le mot de passe est obligatoire</source>
+        <target state="translated">Password is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/components/password-with-confirmation/password-with-confirmation.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reactivePasswordConfirm" datatype="html">
+        <source>Confirmez-le</source>
+        <target state="translated">Confirm</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/components/password-with-confirmation/password-with-confirmation.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reactivePasswordNotMatching" datatype="html">
+        <source>Les deux mots de passe ne sont pas identiques</source>
+        <target state="translated">Passwords are not matching</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/components/password-with-confirmation/password-with-confirmation.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reactiveEmail" datatype="html">
+        <source>Votre adresse e-mail</source>
+        <target state="translated">Your email adress</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/components/email-with-validation/email-with-validation.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="reactiveEmailMissing" datatype="html">
+        <source>L'e-mail est obligatoire</source>
+        <target state="translated">Email is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/account/components/email-with-validation/email-with-validation.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginInProgress">
+        <source>Authentification en cours...</source>
+        <target state="translated">Login in progress</target>
+      </trans-unit>
+      <trans-unit id="loginSuccess">
+        <source>Authentification réussie</source>
+        <target state="translated">Login successful</target>
+      </trans-unit>
+      <trans-unit id="ok">
+        <source>OK</source>
+        <target state="translated">OK</target>
+      </trans-unit>
+      <trans-unit id="noInternet">
+        <source>Pas de connexion Internet</source>
+        <target state="translated">No Internet connection</target>
+      </trans-unit>
+      <trans-unit id="bookingSuccess">
+        <source>Réservation confirmée</source>
+        <target state="translated">Booking successful</target>
+      </trans-unit>
+      <trans-unit id="bookingError">
+        <source>Echec de la réservation (pas de connexion Internet)</source>
+        <target state="translated">Booking failed (no Internet connection)</target>
+      </trans-unit>
+      <trans-unit id="registerInProgress">
+        <source>Inscription en cours...</source>
+        <target state="translated">Register in progress...</target>
+      </trans-unit>
+      <trans-unit id="registerSuccess">
+        <source>Inscription réussie</source>
+        <target state="translated">Register successful</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

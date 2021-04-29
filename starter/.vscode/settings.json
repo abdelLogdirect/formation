@@ -1,0 +1,8 @@
+// Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut et les paramètres utilisateur.
+{
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "explorer.compactFolders": false,
+  "editor.wordBasedSuggestions": false,
+  "angular.experimental-ivy": true
+}
