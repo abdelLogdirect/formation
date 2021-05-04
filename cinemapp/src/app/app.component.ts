@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 import { Store } from '@core/store';
 import { ReservationsService } from '@core/reservations';
+import { Auth } from '@core/auth';
 
 @Component({
   selector: 'app-root',
@@ -26,11 +27,12 @@ export class AppComponent implements OnInit {
     protected store: Store,
     protected reservations: ReservationsService,
     protected network: Network,
+    private auth: Auth,
   ) {}
 
   ngOnInit(): void {
 
-    this.isAuthenticated$ = false;
+    this.isAuthenticated$ = this.auth.isAuthenticated;
 
     this.reservationsCount$ = 0;
 

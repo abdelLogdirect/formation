@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { SlideComponent } from './slide/slide.component';
+import { SliderComponent } from './slider/slider.component';
 
 
 
@@ -10,7 +11,8 @@ import { SlideComponent } from './slide/slide.component';
   declarations: [
     SlideshowComponent,
     PaginationComponent,
-    SlideComponent
+    SlideComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import { SlideComponent } from './slide/slide.component';
   exports: [
     SlideshowComponent,
     PaginationComponent,
-    SlideComponent
+    SlideComponent,
+    SliderComponent
   ]
 })
 export class SlideshowModule { }

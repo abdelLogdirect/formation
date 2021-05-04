@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 import { environment } from '@core/environment';
-import { Auth } from '../../../core-services/auth/auth.service';
+import { Auth } from '@core/auth';
 import { APIData } from '@core/api';
 
 import { RegisterRequestBody, LoginRequestBody, LoginResponse } from './requests.model';

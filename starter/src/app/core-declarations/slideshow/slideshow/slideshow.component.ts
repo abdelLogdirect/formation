@@ -9,6 +9,7 @@ import { SlideComponent } from '../slide/slide.component';
         <ng-content></ng-content>
       </div>
       <app-pagination [slides]="slides" (pagination)="onPagination($event)"></app-pagination>
+      <app-slider [max]="total" (pagination)="onPagination($event)"></app-slider>
     </div>
   `,
   styleUrls: ['./slideshow.component.css'],

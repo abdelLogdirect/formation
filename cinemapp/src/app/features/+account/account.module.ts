@@ -27,6 +27,8 @@ import { CityComponent } from './components/city/city.component';
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatInputModule,
     TextFieldModule,
     MatAutocompleteModule,

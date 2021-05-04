@@ -10,7 +10,7 @@ import { AccountService } from '../../services/account.service';
 @Component({
   template: `
     <mat-card>
-      <form method="post">
+      <form method="post" (ngSubmit)="register()" #registerForm="ngForm">
         <h1 i18n="@@registerTitle">Inscription</h1>
         <p i18n="@@registerWarning">
           Attention : il s'agit d'une app de test. E-mail et mot de passe sont stockés en clair.
@@ -19,12 +19,13 @@ import { AccountService } from '../../services/account.service';
           <li *ngFor="let error of errors">{{ error }}</li>
         </ul>
         <mat-form-field>
-          <input type="email" name="email"
+          <input type="email" name="email" [(ngModel)]="formValues.email" #emailControl="ngModel"
           matInput required autocomplete="email" placeholder="Votre adresse e-mail" i18n-placeholder="@@registerEmail">
           <!-- i18n: @@registerEmailMissing -->
+          <p *ngIf="emailControl.invalid && emailControl.dirty">L'email est obligatoire</p>
         </mat-form-field>
         <mat-form-field>
-          <input type="password" name="password"
+          <input type="password" name="password" [(ngModel)]="formValues.password"
           matInput required autocomplete="off" placeholder="Votre mot de passe" i18n-placeholder="@@registerPassword">
           <mat-error i18n="@@registerPasswordMissing">Le mot de passe est obligatoire</mat-error>
         </mat-form-field>
@@ -59,7 +60,7 @@ import { AccountService } from '../../services/account.service';
             <ng-container i18n="@@registerConditions">J'accepte les conditions d'utilisation</ng-container>. *
           </mat-checkbox>
         </div>
-        <button type="submit" mat-raised-button color="accent" i18n="@@registerSubmit">
+        <button type="submit" [disabled]="registerForm.invalid" mat-raised-button color="accent" i18n="@@registerSubmit">
           Valider l'inscription
         </button>
         <p class="center"><a routerLink="../login" i18n="@@registerExistingAccount">Déjà inscrit/e ? Authentifiez-vous.</a></p>
@@ -70,6 +71,10 @@ import { AccountService } from '../../services/account.service';
 })
 export class RegisterPage implements OnInit, AfterViewInit, OnDestroy {
 
+  formValues = {
+    email: '',
+    password: '',
+  };
   errors: string[] = [];
 
   constructor(
@@ -91,7 +96,7 @@ export class RegisterPage implements OnInit, AfterViewInit, OnDestroy {
 
     const loading = this.snackBar.open($localize`:@@registerInProgress:Inscription en cours...`);
 
-    this.account.register({ email: '', password: '' }).subscribe({
+    this.account.register(this.formValues).subscribe({
       next: ({ error }) => {
 
         loading.dismiss();
