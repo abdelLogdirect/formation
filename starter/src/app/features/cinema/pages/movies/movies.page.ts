@@ -4,6 +4,11 @@ import { Movie } from '../../services/movie.model';
 
 @Component({
   template: `
+    <app-slideshow [delay]="2000">
+      <app-slide><img src="/api/images/movies/joker.jpg" alt=""></app-slide>
+      <app-slide><img src="/api/images/movies/coco.jpg" alt=""></app-slide>
+      <app-slide><img src="/api/images/movies/spiderman.jpg" alt=""></app-slide>
+    </app-slideshow>
     <app-movie-list [movies]="movies"></app-movie-list>
   `,
   styleUrls: ['./movies.page.css']

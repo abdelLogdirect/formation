@@ -6,6 +6,7 @@ import { MoviesPage } from './pages/movies/movies.page';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { MoviePage } from './pages/movie/movie.page';
+import { SlideshowModule } from '../../core-declarations/slideshow/slideshow.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MoviePage } from './pages/movie/movie.page';
   ],
   imports: [
     CommonModule,
-    CinemaRoutingModule
+    CinemaRoutingModule,
+    SlideshowModule
   ]
 })
 export class CinemaModule { }
