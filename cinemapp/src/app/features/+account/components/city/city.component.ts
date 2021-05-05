@@ -4,7 +4,7 @@ import { FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-city',
   template: `
-    <div *ngIf="form">
+    <div *ngIf="form" [formGroup]="form">
       <mat-form-field>
         <input type="text" name="city" [matAutocomplete]="cityAuto" formControlName="city"
         matInput placeholder="Votre ville" i18n-placeholder="@@registerCity" autocomplete="off">

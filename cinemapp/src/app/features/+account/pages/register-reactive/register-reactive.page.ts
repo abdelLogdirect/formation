@@ -11,9 +11,12 @@ import { AutocompleteService } from '../../services/autocomplete.service';
 @Component({
   template: `
     <mat-card>
-      <form method="post" (ngSubmit)="register()">
+      <form method="post" (ngSubmit)="register()" [formGroup]="form">
         <h1 i18n="@@reactiveTitle">Inscription</h1>
         <p i18n="@@reactiveWarning">Attention : il s'agit d'une app de test. E-mail et mot de passe sont stockés en clair.</p>
+        <app-email [form]="form"></app-email>
+        <app-passwords [form]="form"></app-passwords>
+        <app-city [form]="form"></app-city>
         <app-errors [errors]="errors"></app-errors>
         <button type="submit" mat-raised-button color="accent" i18n="@@reactiveSubmit">
           Valider l'inscription
@@ -26,6 +29,14 @@ import { AutocompleteService } from '../../services/autocomplete.service';
 })
 export class RegisterReactivePage implements OnInit, OnDestroy {
 
+  form = new FormGroup({
+    email: new FormControl('', Validators.required),
+    password: new FormGroup({
+      password1: new FormControl('', Validators.required),
+      password2: new FormControl(''),
+    }),
+    city: new FormControl(''),
+  });
   errors: string[] = [];
 
   constructor(
@@ -47,7 +58,7 @@ export class RegisterReactivePage implements OnInit, OnDestroy {
 
     const loading = this.snackBar.open($localize`:@@registerInProgress:Inscription en cours...`);
 
-    this.account.register({ email: '', password: '' }).subscribe({
+    this.account.register(this.form.value).subscribe({
       next: ({ error }) => {
 
         loading.dismiss();

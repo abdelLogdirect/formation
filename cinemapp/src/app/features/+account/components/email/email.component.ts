@@ -4,9 +4,9 @@ import { FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-email',
   template: `
-    <div *ngIf="form">
+    <div *ngIf="form" [formGroup]="form">
       <mat-form-field>
-        <input type="email" matInput required autocomplete="email"
+        <input type="email" [formControlName]="name" matInput required autocomplete="email"
         placeholder="Votre adresse e-mail" i18n-placeholder="@@reactiveEmail">
         <mat-error i18n="@@reactiveEmailMissing">L'e-mail est obligatoire</mat-error>
       </mat-form-field>
@@ -18,6 +18,7 @@ import { FormGroup } from '@angular/forms';
 export class EmailComponent implements OnInit {
 
   @Input() form?: FormGroup;
+  @Input() name = 'email';
 
   constructor() {}
 
