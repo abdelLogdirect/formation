@@ -10,6 +10,8 @@ import { LayoutModule } from '@core/layout';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+// import { LS_PREFIX } from 'local-storage';
 
 @NgModule({
   imports: [
@@ -22,11 +24,18 @@ import { AppComponent } from './app.component';
     }),
     LayoutModule,
     AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    // { provide: LS_PREFIX, useValue: 'logdirect' },
   ],
 })
 export class AppModule {}

@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   /* Without ending slash */
   apiUrl: 'http://localhost:3000',
+  webServiceUrl: 'https://dev-api.example.com',
 };
 
 /*

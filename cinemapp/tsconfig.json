@@ -42,6 +42,10 @@
       ],
       "@core/slideshow": [
         "src/app/core-declarations/slideshow"
+      ],
+      "local-storage": [
+        "dist/local-storage/local-storage",
+        "dist/local-storage"
       ]
     }
   },

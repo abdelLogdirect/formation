@@ -8,6 +8,7 @@ import { LogoutPage } from './pages/logout/logout.page';
 import { ProfilePage } from './pages/profile/profile.page';
 import { RegisterReactivePage } from './pages/register-reactive/register-reactive.page';
 import { LoginReactivePage } from './pages/login-reactive/login-reactive.page';
+import { AuthGuard } from '@core/auth';
 
 const routes: Routes = [
   { path: 'register', component: RegisterPage, canActivate: [OnlineGuard] },
@@ -15,7 +16,7 @@ const routes: Routes = [
   { path: 'login', component: LoginPage, canActivate: [OnlineGuard] },
   { path: 'login-reactive', component: LoginReactivePage, canActivate: [OnlineGuard] },
   { path: 'logout', component: LogoutPage },
-  { path: 'profile', component: ProfilePage },
+  { path: 'profile', component: ProfilePage, canActivate: [AuthGuard] },
 ];
 
 @NgModule({

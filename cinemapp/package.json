@@ -4,6 +4,7 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
+    "prod": "ng build --prod --base-href /fr/ --output-path ../api/htdocs/fr",
     "ng": "ng",
     "test": "ng test",
     "lint": "ng lint",

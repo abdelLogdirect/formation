@@ -20,6 +20,7 @@ import { SlideComponent } from './slide/slide.component';
     </div>
   `,
   styleUrls: ['./slideshow.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SlideshowComponent implements OnInit, AfterContentInit, OnDestroy {
 
@@ -113,6 +114,8 @@ export class SlideshowComponent implements OnInit, AfterContentInit, OnDestroy {
       this.timer = window.setTimeout(() => {
 
         this.move();
+
+        this.changeDetector.markForCheck();
 
       }, this.delay);
 

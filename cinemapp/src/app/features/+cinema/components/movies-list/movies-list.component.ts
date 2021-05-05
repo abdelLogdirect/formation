@@ -6,7 +6,7 @@ import { Movie } from '../../models/movie.model';
   selector: 'app-movies-list',
   template: `
     <div class="app-movies-list">
-      <app-movies-item *ngFor="let movie of movies" [movie]="movie"></app-movies-item>
+      <app-movies-item *ngFor="let movie of movies; trackBy: trackBy" [movie]="movie"></app-movies-item>
     </div>
   `,
   styleUrls: ['./movies-list.component.css'],
@@ -15,6 +15,10 @@ import { Movie } from '../../models/movie.model';
 export class MoviesListComponent implements OnInit {
 
   @Input() movies: Movie[] = [];
+
+  get trackBy(): TrackByFunction<Movie> {
+    return (_, movie) => movie.id;
+  }
 
   constructor() {}
 

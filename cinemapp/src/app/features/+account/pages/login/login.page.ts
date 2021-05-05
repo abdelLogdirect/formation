@@ -7,18 +7,18 @@ import { AccountService } from '../../services/account.service';
 @Component({
   template: `
     <mat-card>
-      <form method="post">
+      <form method="post" (ngSubmit)="login()">
         <h1 i18n="@@loginTitle">Authentification</h1>
         <ul *ngIf="errors.length">
           <li *ngFor="let error of errors">{{ error }}</li>
         </ul>
         <mat-form-field>
-          <input type="email" name="email"
+          <input type="email" name="email" [(ngModel)]="formValues.email"
           matInput required autocomplete="email" placeholder="Votre adresse e-mail" i18n-placeholder="@@loginEmail">
           <mat-error i18n="@@loginEmailMissing">L'e-mail est obligatoire</mat-error>
         </mat-form-field>
         <mat-form-field>
-          <input type="password" name="password"
+          <input type="password" name="password" [(ngModel)]="formValues.password"
           matInput required autocomplete="off" placeholder="Votre mot de passe" i18n-placeholder="@@loginPassword">
           <mat-error i18n="@@loginPasswordMissing">Le mot de passe est obligatoire</mat-error>
         </mat-form-field>
@@ -31,11 +31,36 @@ import { AccountService } from '../../services/account.service';
 })
 export class LoginPage implements OnInit {
 
+  formValues = {
+    email: '',
+    password: '',
+  };
   errors: string[] = [];
 
-  constructor() {}
+  constructor(
+    private router: Router,
+    private account: AccountService,
+  ) {}
 
   ngOnInit(): void {}
+
+  login(): void {
+
+    this.account.login(this.formValues).subscribe(({ error }) => {
+
+      if (!error) {
+
+        this.router.navigate(['/account/profile']).catch(() => {});
+
+      } else {
+
+        this.errors = error.errors ?? [];
+
+      }
+
+    });
+
+  }
 
 }
 
