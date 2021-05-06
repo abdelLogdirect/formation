@@ -7,10 +7,25 @@ import { Movie } from '../../models/movie.model';
 describe('MovieItemComponent', () => {
   let component: MoviesItemComponent;
   let fixture: ComponentFixture<MoviesItemComponent>;
+  let nativeElement: HTMLElement;
+
+  const movie: Movie = {
+    title: 'The Matrix',
+    category: '',
+    categoryId: 0,
+    id: 0,
+    imgSrc: '',
+    releasedDate: '',
+    summary: '',
+    videoYoutube: '',
+    schedules: [],
+    schedulesGroups: [],
+  };
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MoviesItemComponent ]
+      declarations: [ MoviesItemComponent ],
+      schemas: [NO_ERRORS_SCHEMA],
     })
     .compileComponents();
   });
@@ -18,11 +33,17 @@ describe('MovieItemComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(MoviesItemComponent);
     component = fixture.componentInstance;
+    nativeElement = fixture.nativeElement as HTMLElement;
+    component.movie = movie;
     fixture.detectChanges();
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+
+    const title = nativeElement.querySelector('mat-card-title')?.innerHTML;
+
+    expect(title).toContain(movie.title);
+
   });
 
 });

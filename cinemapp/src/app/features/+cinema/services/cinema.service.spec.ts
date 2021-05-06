@@ -8,7 +8,9 @@ import { Movie } from '../models/movie.model';
 
 describe('CinemasService', () => {
 
-  beforeEach(() => TestBed.configureTestingModule({}));
+  beforeEach(() => TestBed.configureTestingModule({
+    imports: [HttpClientTestingModule],
+  }));
 
   it('should be created', () => {
     const service = TestBed.inject(CinemaService);
