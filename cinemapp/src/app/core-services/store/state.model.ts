@@ -9,4 +9,5 @@ import { Reservation } from '@core/reservations';
 export interface State {
   reservations: Reservation[];
   reservationsCount: number;
+  isAuthenticated: boolean;
 }

@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Observable, of, Subscription } from 'rxjs';
+import { fromEvent, Observable, of, Subscription } from 'rxjs';
 import { distinctUntilChanged, debounceTime, filter, switchMap, debounce, catchError } from 'rxjs/operators';
 
 import { AccountService } from '../../services/account.service';

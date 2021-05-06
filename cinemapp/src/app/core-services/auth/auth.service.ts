@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
+import { Store } from '@core/store';
+import { ReplaySubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class Auth {
 
-  isAuthenticated = false;
+  isAuthenticated = new ReplaySubject<boolean>(1);
   private readonly tokenKey = 'access_token';
   private tokenValue: string | null = null;
 
@@ -17,11 +19,15 @@ export class Auth {
 
     this.tokenValue = value;
 
-    this.isAuthenticated = value ? true : false;
+    this.isAuthenticated.next(value ? true : false);
+
+    // this.store.update({ isAuthenticated: value ? true : false });
 
   }
 
-  constructor() {
+  constructor(
+    private store: Store,
+  ) {
 
     this.token = localStorage.getItem(this.tokenKey);
 

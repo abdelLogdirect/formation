@@ -10,7 +10,7 @@ import { Auth } from '@core/auth';
   selector: 'app-root',
   template: `
     <div>
-      <app-header [isAuthenticated]="isAuthenticated$" [reservationsCount]="reservationsCount$"></app-header>
+      <app-header [isAuthenticated]="isAuthenticated$ | async" [reservationsCount]="reservationsCount$"></app-header>
       <main>
         <router-outlet></router-outlet>
       </main>
@@ -20,7 +20,7 @@ import { Auth } from '@core/auth';
 })
 export class AppComponent implements OnInit {
 
-  isAuthenticated$?: boolean;
+  isAuthenticated$?: Observable<boolean>;
   reservationsCount$?: number;
 
   constructor(
@@ -33,6 +33,11 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
 
     this.isAuthenticated$ = this.auth.isAuthenticated;
+    // this.isAuthenticated$ = this.store.select('isAuthenticated');
+
+    // this.auth.isAuthenticated.subscribe((isAuthenticated) => {
+    //   this.isAuthenticated$ = isAuthenticated;
+    // });
 
     this.reservationsCount$ = 0;
 
