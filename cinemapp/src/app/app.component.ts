@@ -32,8 +32,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.isAuthenticated$ = this.auth.isAuthenticated;
-    // this.isAuthenticated$ = this.store.select('isAuthenticated');
+    // this.isAuthenticated$ = this.auth.isAuthenticated;
+    this.isAuthenticated$ = this.store.select('isAuthenticated');
 
     // this.auth.isAuthenticated.subscribe((isAuthenticated) => {
     //   this.isAuthenticated$ = isAuthenticated;

@@ -7,7 +7,7 @@ import { ReplaySubject } from 'rxjs';
 })
 export class Auth {
 
-  isAuthenticated = new ReplaySubject<boolean>(1);
+  // isAuthenticated = new ReplaySubject<boolean>(1);
   private readonly tokenKey = 'access_token';
   private tokenValue: string | null = null;
 
@@ -19,9 +19,9 @@ export class Auth {
 
     this.tokenValue = value;
 
-    this.isAuthenticated.next(value ? true : false);
+    // this.isAuthenticated.next(value ? true : false);
 
-    // this.store.update({ isAuthenticated: value ? true : false });
+    this.store.update({ isAuthenticated: value ? true : false });
 
   }
 
