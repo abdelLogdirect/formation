@@ -2,8 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Observable } from 'rxjs';
-import { distinctUntilChanged, debounceTime, filter, switchMap } from 'rxjs/operators';
+import { Observable, of, Subscription } from 'rxjs';
+import { distinctUntilChanged, debounceTime, filter, switchMap, debounce, catchError } from 'rxjs/operators';
 
 import { AccountService } from '../../services/account.service';
 import { AutocompleteService } from '../../services/autocomplete.service';
@@ -16,7 +16,7 @@ import { AutocompleteService } from '../../services/autocomplete.service';
         <p i18n="@@reactiveWarning">Attention : il s'agit d'une app de test. E-mail et mot de passe sont stockés en clair.</p>
         <app-email [form]="form"></app-email>
         <app-passwords [form]="form"></app-passwords>
-        <app-city [form]="form"></app-city>
+        <app-city [form]="form" [suggestions]="citySuggestions"></app-city>
         <app-errors [errors]="errors"></app-errors>
         <button type="submit" mat-raised-button color="accent" i18n="@@reactiveSubmit">
           Valider l'inscription
@@ -38,6 +38,8 @@ export class RegisterReactivePage implements OnInit, OnDestroy {
     city: new FormControl(''),
   });
   errors: string[] = [];
+  citySuggestions: string[] = [];
+  citySubscription?: Subscription;
 
   constructor(
     private account: AccountService,
@@ -47,9 +49,26 @@ export class RegisterReactivePage implements OnInit, OnDestroy {
     private snackBar: MatSnackBar,
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
 
-  ngOnDestroy(): void {}
+    const city = this.form.get('city') as FormControl;
+
+    this.citySubscription = (city.valueChanges as Observable<string>).pipe(
+      filter((value) => value.length > 2),
+      debounceTime(500),
+      switchMap((value) => this.autocomplete.getCitySuggestions(value)),
+      catchError(() => of([])),
+    ).subscribe((suggestions) => {
+      this.citySuggestions = suggestions;
+    });
+
+  }
+
+  ngOnDestroy(): void {
+
+    this.citySubscription?.unsubscribe();
+
+  }
 
   /**
    * Send form data to the API, then redirect to profile on success or display error
