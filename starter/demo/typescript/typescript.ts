@@ -2,7 +2,13 @@
 
 /* Dynamic indexes */
 
-const projects = {
+interface Projects {
+  [key: string]: {
+    type: string;
+  };
+}
+
+const projects: Projects = {
   app: {
     type: 'application',
   },
@@ -11,28 +17,49 @@ const projects = {
   },
 };
 
+interface ProjectConfig {
+  type: string;
+}
+
+const projectsMap = new Map<string, ProjectConfig>([
+  ['app', { type: 'application' }],
+  ['storage', { type: 'library' }],
+]);
+
 
 
 /* *** Union types / intersections *** */
 
 /* Null */
 
-let title = null;
+let title: string | null = null;
 title = `The Matrix`;
 
 /* Discrimated union */
 
-interface JsonSchema {
-  type: 'string' | 'number';
+// interface JsonSchema {
+//   type: 'string' | 'number';
+//   maxLength?: number;
+//   multipleOf?: number;
+// }
+
+interface JsonSchemaString {
+  type: 'string';
   maxLength?: number;
+}
+
+interface JsonSchemaNumber {
+  type: 'number';
   multipleOf?: number;
 }
+
+type JsonSchema = JsonSchemaString | JsonSchemaNumber;
 
 
 
 /* *** Unknown type *** */
 
-function getFromStorage(key: string): any {
+function getFromStorage(key: string): unknown {
 
   const dataString = localStorage.getItem(key);
 
@@ -42,7 +69,9 @@ function getFromStorage(key: string): any {
 
     try {
       data = JSON.parse(dataString);
-    } catch {}
+    } catch {
+      // Nothing
+    }
 
   }
 
@@ -52,7 +81,7 @@ function getFromStorage(key: string): any {
 
 const token = getFromStorage('token');
 
-token.substr(2);
+// token.substr(2);
 
 
 
@@ -60,8 +89,8 @@ token.substr(2);
 
 /* Class / interface generic */
 
-interface ApiData {
-  data: any;
+interface ApiData<T> {
+  data: T;
   error?: {
     message: string;
   };
@@ -74,27 +103,27 @@ interface Movie {
 }
 
 fetch(`/api/cinema/movie/1`)
-  .then((response) => response.json())
-  .then((movie) => {
-    console.log(movie.title);
+  .then((response) => response.json() as Promise<ApiData<Movie>>)
+  .then(({ data }) => {
+    console.log(data.title);
   });
 
 /* Function generic */
 
-function fetchJson(url: string): Promise<any> {
+function fetchJson<DataType>(url: string): Promise<DataType> {
 
   return fetch(url)
     .then((response) => response.json());
 
 }
 
-fetchJson(`/api/cinema/movie/1`).then((movies) => {
+fetchJson<Movie>(`/api/cinema/movie/1`).then((movies) => {
   console.log(movies);
 });
 
 /* Function generic to preserve a type */
 
-function filterArray(list: any[]): any[] {
+function filterArray<T>(list: T[]): T[] {
 
   return list.filter((item) => item !== undefined);
 
@@ -105,12 +134,15 @@ const moviesList: string[] = [`The Matrix`, `The Matrix Reloaded`, `The Matrix R
 const filteredMoviesList = filterArray(moviesList);
 
 
+function testConstraint<T extends unknown[]>() {}
+
+
 
 /* *** Built-in types *** */
 
 /* Partial / Required */
 
-function updateMovie(id: string, data: Movie): void {
+function updateMovie(id: string, data: Partial<Movie>): void {
 
   const database: { movies: Movie[]; } = {
     movies: [{
@@ -132,20 +164,20 @@ function updateMovie(id: string, data: Movie): void {
 
 }
 
-// updateMovie('1', { title: `Matrix Reloaded` });
+updateMovie('1', { title: `Matrix Reloaded` });
 
 /* Pick / Omit */
 
-const movieWithTitleOnly = {
+const movieWithTitleOnly: Pick<Movie, 'title'> = {
   title: `The Matrix`,
 };
 
-const movieWithIdAndTitle = {
+const movieWithIdAndTitle: Omit<Movie, 'summary'> = {
   id: '1',
   title: `The Matrix`,
 };
 
-const movieWithoutSummary = {
+const movieWithoutSummary: Pick<Movie, 'title' | 'id'> = {
   id: '1',
   title: `The Matrix`,
 };
